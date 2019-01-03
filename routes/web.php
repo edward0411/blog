@@ -23,7 +23,7 @@ Route::get('/saludo/{name}/{nickname?}', function($name, $nickname = null){
     if ($nickname) {
     return "Bienvenido {$name}, tu apodo es {$nickname}";
     }else {
-        return "Bienvenido {$name}, tu no tienes apodo";
+        return "Bienvenido {$name}";
     }
 });
 
